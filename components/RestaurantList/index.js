@@ -30,11 +30,11 @@ const RestaurantList = (
               <Card
                 style={{ width: "250px", margin: "0 10px 20px 10px"}}
                 className="h-100 main-height"
-                key={res._id}
+                key={res.id}
               >
                 <Link
-                      as={`/restaurants/${res._id}`}
-                      href={`/restaurants?id=${res._id}`}
+                      as={`/restaurants/${res.id}`}
+                      href={`/restaurants?id=${res.id}`}
                 ><a>
                   <CardImg
                     top={true}

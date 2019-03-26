@@ -140,7 +140,7 @@ export default compose(
     options: props => {
       return {
         variables: {
-          id: props.router.query._id
+          id: props.router.query.id
         }
       };
     },
