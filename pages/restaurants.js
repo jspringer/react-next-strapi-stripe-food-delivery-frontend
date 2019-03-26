@@ -33,6 +33,8 @@ class Restaurants extends React.Component {
       context,
       isAuthenticated
     } = this.props;
+    let resPrice = res.price;
+    let fullPrice = resPrice.toFixed(2);
     if (error) return "Error Loading Dishes";
 
     if (restaurant) {
@@ -66,7 +68,7 @@ class Restaurants extends React.Component {
                           color="primary"
                           style={{ width: "100%", textAlign: "center" }}
                         >
-                          + Add To Cart (${res.price})
+                          + Add To Cart (${fullPrice})
                         </Button>
                       </div>
                       <style jsx>
