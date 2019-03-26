@@ -66,7 +66,7 @@ class Restaurants extends React.Component {
                           color="primary"
                           style={{ width: "100%", textAlign: "center" }}
                         >
-                          + Add To Cart (${res.price.toFixed(2)})
+                          + Add To Cart (${res.price === res.price.trunc() ? res.price : res.price.toFixed(2)})
                         </Button>
                       </div>
                       <style jsx>
