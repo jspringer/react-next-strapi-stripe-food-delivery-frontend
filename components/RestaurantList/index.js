@@ -33,8 +33,8 @@ const RestaurantList = (
                 key={res.id}
               >
                 <Link
-                      as={`/restaurants/${res.id}`}
-                      href={`/restaurants?id=${res.id}`}
+                      as={`/restaurants/${res._id}`}
+                      href={`/restaurants?id=${res._id}`}
                 ><a>
                   <CardImg
                     top={true}
