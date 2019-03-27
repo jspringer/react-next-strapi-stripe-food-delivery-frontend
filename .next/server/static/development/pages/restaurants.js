@@ -673,7 +673,7 @@ __webpack_require__.r(__webpack_exports__);
 
  // const apiUrl = process.env.API_URL || "http://localhost:1337";
 
-var apiUrl = "https://jsnspr-react-fd-backend.herokuapp.com/";
+var apiUrl = "http://jsnspr-react-fd-backend.herokuapp.com/";
 var strapi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_4___default.a(apiUrl);
 var strapiRegister = function strapiRegister(username, email, password) {
   if (true) {
