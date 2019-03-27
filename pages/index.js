@@ -3,14 +3,10 @@
 import RestaurantList from "../components/RestaurantList";
 import React from "react";
 import defaultPage from "../hocs/defaultPage";
-import { Layout } from "../components/Layout";
 import {
-  Alert,
-  Button,
   Col,
   Input,
   InputGroup,
-  InputGroupAddon,
   Row
 } from "reactstrap";
 

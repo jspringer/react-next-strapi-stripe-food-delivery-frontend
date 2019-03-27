@@ -2,8 +2,6 @@
 
 import React from "react";
 import { strapiRegister } from "../lib/auth";
-
-import Router from "next/router";
 import {
   Container,
   Row,
@@ -12,8 +10,7 @@ import {
   Form,
   FormGroup,
   Label,
-  Input,
-  FormText
+  Input
 } from "reactstrap";
 
 class SignUp extends React.Component {

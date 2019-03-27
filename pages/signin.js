@@ -1,9 +1,6 @@
 /* /pages/signin.js */ 
 import React from "react";
-
-import defaultPage from "../hocs/defaultPage";
 import { strapiLogin } from "../lib/auth";
-
 import Router from "next/router";
 import {
   Container,
@@ -13,8 +10,7 @@ import {
   Form,
   FormGroup,
   Label,
-  Input,
-  FormText
+  Input
 } from "reactstrap";
 import Cookies from "js-cookie";
 
