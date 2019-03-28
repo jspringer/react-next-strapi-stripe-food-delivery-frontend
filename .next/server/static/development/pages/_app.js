@@ -665,7 +665,7 @@ __webpack_require__.r(__webpack_exports__);
 var config = {
   link: new apollo_link_http__WEBPACK_IMPORTED_MODULE_0__["HttpLink"]({
     // uri: process.env.API_URL || "http://localhost:1337/graphql" // Server URL (must be absolute)
-    uri: "https://jsnspr-fd-be.herokuapp.com" // Server URL (must be absolute)
+    uri: "https://jsnspr-fd-be.herokuapp.com/graphql" // Server URL (must be absolute)
 
   })
 };
