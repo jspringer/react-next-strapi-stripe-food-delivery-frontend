@@ -660,8 +660,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var config = {
   link: new apollo_link_http__WEBPACK_IMPORTED_MODULE_0__["HttpLink"]({
-    // uri: process.env.API_URL || "http://localhost:1337/graphql" // Server URL (must be absolute)
-    uri: "https://jsnspr-fd-be.herokuapp.com/graphql" // Server URL (must be absolute)
+    uri: process.env.API_URL || "http://localhost:1337/graphql" // Server URL (must be absolute)
+    // uri: "https://jsnspr-fd-be.herokuapp.com/graphql" // Server URL (must be absolute)
 
   })
 };
@@ -704,9 +704,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // const apiUrl = "http://localhost:1337";
 
-var apiUrl = process.env.API_URL || "https://jsnspr-fd-be.herokuapp.com";
+var apiUrl = "http://localhost:1337"; // const apiUrl = process.env.API_URL || "https://jsnspr-fd-be.herokuapp.com";
+
 var strapi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_4___default.a(apiUrl);
 var strapiRegister = function strapiRegister(username, email, password) {
   if (true) {

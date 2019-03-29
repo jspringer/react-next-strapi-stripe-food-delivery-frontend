@@ -4,12 +4,13 @@ import React from "react";
 
 import CardSection from "./CardSection";
 
-import { FormGroup, Label, Input, FormText, Row, Col } from "reactstrap";
+import { FormGroup, Label, Input } from "reactstrap";
 import { injectStripe } from "react-stripe-elements";
 import Strapi from "strapi-sdk-javascript/build/main";
 import Router from "next/router";
 
-const apiUrl = process.env.API_URL || "http://localhost:1337";
+// const apiUrl = process.env.API_URL || "http://localhost:1337";
+const apiUrl = "https://jsnspr-fd-be.herokuapp.com"
 const strapi = new Strapi(apiUrl);
 /* components/Checkout/CheckoutForm.js */
 class CheckoutForm extends React.Component {
