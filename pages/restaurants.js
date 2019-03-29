@@ -39,7 +39,7 @@ class Restaurants extends React.Component {
       return (
         <>
           <div style={{ marginLeft: "20px", marginBottom: "10px" }}>
-            <span style={{ fontSize: "1.5rem", fontFamily: "'Gothic A1', Roboto, Helvetica, Arial, 'Open Sans'", fontWeight: "900" }}>{restaurant.name}</span>
+            <span style={{ fontSize: "1.6rem", fontFamily: "'Gothic A1', Roboto, Helvetica, Arial, 'Open Sans'", fontWeight: "900" }}>{restaurant.name}</span>
           </div>
           <Row style={{ width: "100%", textAlign: "center", paddingTop: "2px", paddingLeft: "20px" }}>
             <Col xs="9" style={{ padding: 0 }}>
