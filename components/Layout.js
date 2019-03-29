@@ -94,19 +94,17 @@ class Layout extends React.Component {
           </Nav>
         </header>
         <Container>{children}</Container>
-        <footer className="footer" style={{ position: "absolute", right: "0", bottom: "0", left: "0" }}><Link href="http://jasonspringer.me/">Jason Springer</Link></footer>
+        <footer className="footer"><Link href="http://jasonspringer.me/">Jason Springer</Link></footer>
         {/* <footer className="footer">
           {"Strapi footer"}
           <style jsx>
             {`
               .footer {
-                position: absolute;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                padding: 1rem;
-                background-color: #efefef;
-                text-align: center;
+                position: static;
+                width: 100%;
+                height: 60px;
+                line-height: 60px;
+                background-color: #f5f5f5;
               }
               a:hover {
                 cursor: pointer;
