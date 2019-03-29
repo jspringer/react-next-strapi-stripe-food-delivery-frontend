@@ -55,7 +55,7 @@ class Layout extends React.Component {
           <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto" rel="stylesheet" />
         </Head>
         <header style={{ marginBottom: "30px" }}>
-          <Nav className="navbar navbar-light bg-white" style={{ position: "sticky", top: "0" }}>
+          <Nav className="navbar navbar-light bg-white" style={{ position: "sticky !important", top: "0" }}>
             <NavItem>
               <Link href="/">
                 <a className="navbar-brand"><span style={{ color: "black", fontFamily: "Roboto, Helvetica, Arial, 'Open Sans'", fontWeight: "900" }}>gimmegrub</span></a>
