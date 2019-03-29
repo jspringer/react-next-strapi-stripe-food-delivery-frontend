@@ -38,7 +38,7 @@ class Restaurants extends React.Component {
     if (restaurant) {
       return (
         <>
-          <div style={{ position: "absolute", left: "125px", top: "13px" }}>
+          <div>
             <span style={{ fontSize: "1.3rem", fontFamily: "'Gothic A1', Roboto, Helvetica, Arial, 'Open Sans'", fontWeight: "500" }}> - {restaurant.name}</span>
           </div>
           <Row style={{ width: "100%", textAlign: "center", paddingTop: "2px", paddingLeft: "20px" }}>
