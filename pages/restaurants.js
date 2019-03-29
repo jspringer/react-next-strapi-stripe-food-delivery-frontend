@@ -38,10 +38,10 @@ class Restaurants extends React.Component {
     if (restaurant) {
       return (
         <>
-          <div style={{ marginLeft: "20px", marginBottom: "10px", position: "absolute", left: "0" }}>
+          <div style={{ position: "absolute", left: "30px", top: "70px" }}>
             <span style={{ fontSize: "1.6rem", fontFamily: "'Gothic A1', Roboto, Helvetica, Arial, 'Open Sans'", fontWeight: "900" }}>{restaurant.name}</span>
           </div>
-          <Row style={{ width: "100%", textAlign: "center", paddingTop: "2px", paddingLeft: "20px" }}>
+          <Row style={{ width: "100%", textAlign: "center", paddingTop: "40px", paddingLeft: "20px" }}>
             <Col xs="9" style={{ padding: 0 }}>
               <div style={{ display: "inline-block" }} className="h-100">
                 {restaurant.dishes.map(res => (

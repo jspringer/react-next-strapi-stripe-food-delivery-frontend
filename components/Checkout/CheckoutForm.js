@@ -61,12 +61,6 @@ class CheckoutForm extends React.Component {
         <hr />
         <FormGroup style={{ display: "flex" }}>
           <div style={{ flex: "0.90", marginRight: 10 }}>
-            <Label>Name</Label>
-            <Input onChange={this.onChange.bind(this, "name")} />
-          </div>
-        </FormGroup>
-        <FormGroup style={{ display: "flex" }}>
-          <div style={{ flex: "0.90", marginRight: 10 }}>
             <Label>Address</Label>
             <Input onChange={this.onChange.bind(this, "address")} />
           </div>
