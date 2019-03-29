@@ -66,10 +66,10 @@ const RestaurantList = (
         </div>
       );
     } else {
-      return <h1>No Restaurants Found</h1>;
+      return <span style={{ fontSize: "1rem", fontWeight: "500" }}>No Restaurants Found</span>;
     }
   }
-  return <h1>Waiting for backend to boot (demo)</h1>;
+  return <span style={{ fontSize: "1rem", fontWeight: "500" }}>Waiting for backend to boot (demo)</span>;
 };
 
 const query = gql`

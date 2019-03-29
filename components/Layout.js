@@ -4,7 +4,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { unsetToken } from "../lib/auth";
-import { Container, Nav, NavItem, Input, InputGroup, InputGroupAddon } from "reactstrap";
+import { Container, Nav, NavItem } from "reactstrap";
 import defaultPage from "../hocs/defaultPage";
 import Cookie from "js-cookie";
 

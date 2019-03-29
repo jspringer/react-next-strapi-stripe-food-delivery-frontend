@@ -36,7 +36,7 @@ class Cart extends React.Component {
     const { isAuthenticated } = this.props;
     console.log(isAuthenticated);
     return (
-      <div>
+      <div style={{ position: "sticky", top: "100px", right: "30px" }}>
         <Card style={{ padding: "10px 5px", width: "250px" }} className="cart">
           <CardTitle style={{ margin: 10 }}>Your Order:</CardTitle>
           <hr />
