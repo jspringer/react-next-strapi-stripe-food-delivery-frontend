@@ -69,7 +69,7 @@ const RestaurantList = (
       return <h1>No Restaurants Found</h1>;
     }
   }
-  return <h1>Loading</h1>;
+  return <h1>Waiting for backend to boot (demo)</h1>;
 };
 
 const query = gql`

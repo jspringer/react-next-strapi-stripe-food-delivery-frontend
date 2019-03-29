@@ -94,7 +94,7 @@ class Layout extends React.Component {
           </Nav>
         </header>
         <Container>{children}</Container>
-        <footer className="footer"><Link href="http://jasonspringer.me/">Jason Springer</Link></footer>
+        <footer className="footer" style={{ position: "absolute", bottom: "0" }}><Link href="http://jasonspringer.me/">Jason Springer</Link></footer>
         {/* <footer className="footer">
           {"Strapi footer"}
           <style jsx>
