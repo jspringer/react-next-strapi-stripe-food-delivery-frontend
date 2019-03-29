@@ -125,7 +125,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function _templateObject() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  {\n    restaurants {\n      id\n      name\n      description\n      image {\n        url\n      }\n    }\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_2__["default"])(["\n  {\n    restaurants {\n      _id\n      name\n      description\n      image {\n        url\n      }\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -168,10 +168,10 @@ var RestaurantList = function RestaurantList(_ref, req) {
             margin: "0 10px 20px 10px"
           },
           className: "h-100 main-height",
-          key: res.id
+          key: res._id
         }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
-          as: "/restaurants/".concat(res.id),
-          href: "/restaurants?id=".concat(res.id)
+          as: "/restaurants/".concat(res._id),
+          href: "/restaurants?id=".concat(res._id)
         }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("a", {
           className: "jsx-3651337387"
         }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_8__["CardImg"], {
@@ -195,7 +195,7 @@ var RestaurantList = function RestaurantList(_ref, req) {
         }, res.description)))));
       })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_3___default.a, {
         id: "3651337387"
-      }, ".card-columns{-webkit-column-count:3;column-count:3;}.main-height{min-height:510px;}.card-text{color:black;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qL0RldmVsb3BtZW50L1Byb2plY3RzL3JlYWN0LW5leHQtc3RyYXBpLXN0cmlwZS1mb29kLWRlbGl2ZXJ5L2Zyb250ZW5kL2NvbXBvbmVudHMvUmVzdGF1cmFudExpc3QvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcURhLEFBR2dDLEFBR0UsQUFHTCxZQUNkLEtBSEEscUJBSEEiLCJmaWxlIjoiL1VzZXJzL2ovRGV2ZWxvcG1lbnQvUHJvamVjdHMvcmVhY3QtbmV4dC1zdHJhcGktc3RyaXBlLWZvb2QtZGVsaXZlcnkvZnJvbnRlbmQvY29tcG9uZW50cy9SZXN0YXVyYW50TGlzdC9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIGNvbXBvbmVudHMvUmVzdGF1cmFudExpc3QvaW5kZXguanMgKi9cbmltcG9ydCBncWwgZnJvbSBcImdyYXBocWwtdGFnXCI7XG5pbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5pbXBvcnQgeyBncmFwaHFsIH0gZnJvbSBcInJlYWN0LWFwb2xsb1wiO1xuaW1wb3J0IHtcbiAgQ2FyZCxcbiAgQ2FyZEJvZHksXG4gIENhcmRJbWdcbn0gZnJvbSBcInJlYWN0c3RyYXBcIjtcbmltcG9ydCB7IENhcmRUZXh0LCBDYXJkVGl0bGUgfSBmcm9tIFwicmVhY3RzdHJhcFwiO1xuXG5jb25zdCBSZXN0YXVyYW50TGlzdCA9IChcbiAgeyBkYXRhOiB7IGxvYWRpbmcsIGVycm9yLCByZXN0YXVyYW50cyB9LCBzZWFyY2ggfSxcbiAgcmVxXG4pID0+IHtcbiAgaWYgKGVycm9yKSByZXR1cm4gXCJFcnJvciBsb2FkaW5nIHJlc3RhdXJhbnRzXCI7XG4gIC8vaWYgcmVzdGF1cmFudHMgYXJlIHJldHVybmVkIGZyb20gdGhlIEdyYXBoUUwgcXVlcnksIHJ1biB0aGUgZmlsdGVyIHF1ZXJ5XG4gIC8vYW5kIHNldCBlcXVhbCB0byB2YXJpYWJsZSByZXN0YXVyYW50U2VhcmNoXG5cbiAgaWYgKHJlc3RhdXJhbnRzICYmIHJlc3RhdXJhbnRzLmxlbmd0aCkge1xuICAgIC8vc2VhcmNoUXVlcnlcbiAgICBjb25zdCBzZWFyY2hRdWVyeSA9IHJlc3RhdXJhbnRzLmZpbHRlcihxdWVyeSA9PlxuICAgICAgcXVlcnkubmFtZS50b0xvd2VyQ2FzZSgpLmluY2x1ZGVzKHNlYXJjaClcbiAgICApO1xuICAgIGlmIChzZWFyY2hRdWVyeS5sZW5ndGggIT0gMCkge1xuICAgICAgcmV0dXJuIChcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0ZXh0LWNlbnRlclwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaC0xMDBcIj5cbiAgICAgICAgICAgIHtzZWFyY2hRdWVyeS5tYXAocmVzID0+IChcbiAgICAgICAgICAgICAgPENhcmRcbiAgICAgICAgICAgICAgICBzdHlsZT17eyB3aWR0aDogXCIyNTBweFwiLCBtYXJnaW46IFwiMCAxMHB4IDIwcHggMTBweFwifX1cbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJoLTEwMCBtYWluLWhlaWdodFwiXG4gICAgICAgICAgICAgICAga2V5PXtyZXMuaWR9XG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICA8TGlua1xuICAgICAgICAgICAgICAgICAgICAgIGFzPXtgL3Jlc3RhdXJhbnRzLyR7cmVzLmlkfWB9XG4gICAgICAgICAgICAgICAgICAgICAgaHJlZj17YC9yZXN0YXVyYW50cz9pZD0ke3Jlcy5pZH1gfVxuICAgICAgICAgICAgICAgID48YT5cbiAgICAgICAgICAgICAgICAgIDxDYXJkSW1nXG4gICAgICAgICAgICAgICAgICAgIHRvcD17dHJ1ZX1cbiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3sgaGVpZ2h0OiAyNTAgfX1cbiAgICAgICAgICAgICAgICAgICAgc3JjPXtyZXMuaW1hZ2UudXJsfVxuICAgICAgICAgICAgICAgICAgLz4gICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICA8Q2FyZEJvZHkgY2xhc3NOYW1lPVwidGV4dC1sZWZ0XCI+XG4gICAgICAgICAgICAgICAgICA8Q2FyZFRpdGxlIHN0eWxlPXt7IGZvbnRTaXplOiBcIjEuM3JlbVwiLCBjb2xvcjogXCJibGFja1wiIH19PntyZXMubmFtZX08L0NhcmRUaXRsZT5cbiAgICAgICAgICAgICAgICAgIDxDYXJkVGV4dCBjbGFzc05hbWU9XCJoaWRlLWJsb2NrIGNhcmQtdGV4dFwiIHN0eWxlPXt7IGZvbnRTaXplOiBcIjAuOXJlbVwifX0+e3Jlcy5kZXNjcmlwdGlvbn08L0NhcmRUZXh0PlxuICAgICAgICAgICAgICAgIDwvQ2FyZEJvZHk+PC9hPlxuICAgICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgICAgPC9DYXJkPlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgICAgICAgIHtgXG4gICAgICAgICAgICAgIC5jYXJkLWNvbHVtbnMge1xuICAgICAgICAgICAgICAgIGNvbHVtbi1jb3VudDogMztcbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAubWFpbi1oZWlnaHQge1xuICAgICAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDUxMHB4O1xuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgIC5jYXJkLXRleHQge1xuICAgICAgICAgICAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgYH1cbiAgICAgICAgICA8L3N0eWxlPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHJldHVybiA8aDE+Tm8gUmVzdGF1cmFudHMgRm91bmQ8L2gxPjtcbiAgICB9XG4gIH1cbiAgcmV0dXJuIDxoMT5Mb2FkaW5nPC9oMT47XG59O1xuXG5jb25zdCBxdWVyeSA9IGdxbGBcbiAge1xuICAgIHJlc3RhdXJhbnRzIHtcbiAgICAgIGlkXG4gICAgICBuYW1lXG4gICAgICBkZXNjcmlwdGlvblxuICAgICAgaW1hZ2Uge1xuICAgICAgICB1cmxcbiAgICAgIH1cbiAgICB9XG4gIH1cbmA7XG5SZXN0YXVyYW50TGlzdC5nZXRJbml0aWFsUHJvcHMgPSBhc3luYyAoeyByZXEgfSkgPT4ge1xuICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChcImh0dHBzOi8vYXBpLmdpdGh1Yi5jb20vcmVwb3MvemVpdC9uZXh0LmpzXCIpO1xuICBjb25zdCBqc29uID0gYXdhaXQgcmVzLmpzb24oKTtcbiAgcmV0dXJuIHsgc3RhcnM6IGpzb24uc3RhcmdhemVyc19jb3VudCB9O1xufTtcbi8vIFRoZSBgZ3JhcGhxbGAgd3JhcHBlciBleGVjdXRlcyBhIEdyYXBoUUwgcXVlcnkgYW5kIG1ha2VzIHRoZSByZXN1bHRzXG4vLyBhdmFpbGFibGUgb24gdGhlIGBkYXRhYCBwcm9wIG9mIHRoZSB3cmFwcGVkIGNvbXBvbmVudCAoUmVzdGF1cmFudExpc3QpXG5leHBvcnQgZGVmYXVsdCBncmFwaHFsKHF1ZXJ5LCB7XG4gIHByb3BzOiAoeyBkYXRhIH0pID0+ICh7XG4gICAgZGF0YVxuICB9KVxufSkoUmVzdGF1cmFudExpc3QpOyJdfQ== */\n/*@ sourceURL=/Users/j/Development/Projects/react-next-strapi-stripe-food-delivery/frontend/components/RestaurantList/index.js */"));
+      }, ".card-columns{-webkit-column-count:3;column-count:3;}.main-height{min-height:510px;}.card-text{color:black;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qL0RldmVsb3BtZW50L1Byb2plY3RzL3JlYWN0LW5leHQtc3RyYXBpLXN0cmlwZS1mb29kLWRlbGl2ZXJ5L2Zyb250ZW5kL2NvbXBvbmVudHMvUmVzdGF1cmFudExpc3QvaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcURhLEFBR2dDLEFBR0UsQUFHTCxZQUNkLEtBSEEscUJBSEEiLCJmaWxlIjoiL1VzZXJzL2ovRGV2ZWxvcG1lbnQvUHJvamVjdHMvcmVhY3QtbmV4dC1zdHJhcGktc3RyaXBlLWZvb2QtZGVsaXZlcnkvZnJvbnRlbmQvY29tcG9uZW50cy9SZXN0YXVyYW50TGlzdC9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIGNvbXBvbmVudHMvUmVzdGF1cmFudExpc3QvaW5kZXguanMgKi9cbmltcG9ydCBncWwgZnJvbSBcImdyYXBocWwtdGFnXCI7XG5pbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5pbXBvcnQgeyBncmFwaHFsIH0gZnJvbSBcInJlYWN0LWFwb2xsb1wiO1xuaW1wb3J0IHtcbiAgQ2FyZCxcbiAgQ2FyZEJvZHksXG4gIENhcmRJbWdcbn0gZnJvbSBcInJlYWN0c3RyYXBcIjtcbmltcG9ydCB7IENhcmRUZXh0LCBDYXJkVGl0bGUgfSBmcm9tIFwicmVhY3RzdHJhcFwiO1xuXG5jb25zdCBSZXN0YXVyYW50TGlzdCA9IChcbiAgeyBkYXRhOiB7IGxvYWRpbmcsIGVycm9yLCByZXN0YXVyYW50cyB9LCBzZWFyY2ggfSxcbiAgcmVxXG4pID0+IHtcbiAgaWYgKGVycm9yKSByZXR1cm4gXCJFcnJvciBsb2FkaW5nIHJlc3RhdXJhbnRzXCI7XG4gIC8vaWYgcmVzdGF1cmFudHMgYXJlIHJldHVybmVkIGZyb20gdGhlIEdyYXBoUUwgcXVlcnksIHJ1biB0aGUgZmlsdGVyIHF1ZXJ5XG4gIC8vYW5kIHNldCBlcXVhbCB0byB2YXJpYWJsZSByZXN0YXVyYW50U2VhcmNoXG5cbiAgaWYgKHJlc3RhdXJhbnRzICYmIHJlc3RhdXJhbnRzLmxlbmd0aCkge1xuICAgIC8vc2VhcmNoUXVlcnlcbiAgICBjb25zdCBzZWFyY2hRdWVyeSA9IHJlc3RhdXJhbnRzLmZpbHRlcihxdWVyeSA9PlxuICAgICAgcXVlcnkubmFtZS50b0xvd2VyQ2FzZSgpLmluY2x1ZGVzKHNlYXJjaClcbiAgICApO1xuICAgIGlmIChzZWFyY2hRdWVyeS5sZW5ndGggIT0gMCkge1xuICAgICAgcmV0dXJuIChcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0ZXh0LWNlbnRlclwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaC0xMDBcIj5cbiAgICAgICAgICAgIHtzZWFyY2hRdWVyeS5tYXAocmVzID0+IChcbiAgICAgICAgICAgICAgPENhcmRcbiAgICAgICAgICAgICAgICBzdHlsZT17eyB3aWR0aDogXCIyNTBweFwiLCBtYXJnaW46IFwiMCAxMHB4IDIwcHggMTBweFwifX1cbiAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJoLTEwMCBtYWluLWhlaWdodFwiXG4gICAgICAgICAgICAgICAga2V5PXtyZXMuX2lkfVxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgPExpbmtcbiAgICAgICAgICAgICAgICAgICAgICBhcz17YC9yZXN0YXVyYW50cy8ke3Jlcy5faWR9YH1cbiAgICAgICAgICAgICAgICAgICAgICBocmVmPXtgL3Jlc3RhdXJhbnRzP2lkPSR7cmVzLl9pZH1gfVxuICAgICAgICAgICAgICAgID48YT5cbiAgICAgICAgICAgICAgICAgIDxDYXJkSW1nXG4gICAgICAgICAgICAgICAgICAgIHRvcD17dHJ1ZX1cbiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3sgaGVpZ2h0OiAyNTAgfX1cbiAgICAgICAgICAgICAgICAgICAgc3JjPXtyZXMuaW1hZ2UudXJsfVxuICAgICAgICAgICAgICAgICAgLz4gICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICA8Q2FyZEJvZHkgY2xhc3NOYW1lPVwidGV4dC1sZWZ0XCI+XG4gICAgICAgICAgICAgICAgICA8Q2FyZFRpdGxlIHN0eWxlPXt7IGZvbnRTaXplOiBcIjEuM3JlbVwiLCBjb2xvcjogXCJibGFja1wiIH19PntyZXMubmFtZX08L0NhcmRUaXRsZT5cbiAgICAgICAgICAgICAgICAgIDxDYXJkVGV4dCBjbGFzc05hbWU9XCJoaWRlLWJsb2NrIGNhcmQtdGV4dFwiIHN0eWxlPXt7IGZvbnRTaXplOiBcIjAuOXJlbVwifX0+e3Jlcy5kZXNjcmlwdGlvbn08L0NhcmRUZXh0PlxuICAgICAgICAgICAgICAgIDwvQ2FyZEJvZHk+PC9hPlxuICAgICAgICAgICAgICAgIDwvTGluaz5cbiAgICAgICAgICAgICAgPC9DYXJkPlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICA8c3R5bGUganN4IGdsb2JhbD5cbiAgICAgICAgICAgIHtgXG4gICAgICAgICAgICAgIC5jYXJkLWNvbHVtbnMge1xuICAgICAgICAgICAgICAgIGNvbHVtbi1jb3VudDogMztcbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAubWFpbi1oZWlnaHQge1xuICAgICAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDUxMHB4O1xuICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgIC5jYXJkLXRleHQge1xuICAgICAgICAgICAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgYH1cbiAgICAgICAgICA8L3N0eWxlPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHJldHVybiA8aDE+Tm8gUmVzdGF1cmFudHMgRm91bmQ8L2gxPjtcbiAgICB9XG4gIH1cbiAgcmV0dXJuIDxoMT5Mb2FkaW5nPC9oMT47XG59O1xuXG5jb25zdCBxdWVyeSA9IGdxbGBcbiAge1xuICAgIHJlc3RhdXJhbnRzIHtcbiAgICAgIF9pZFxuICAgICAgbmFtZVxuICAgICAgZGVzY3JpcHRpb25cbiAgICAgIGltYWdlIHtcbiAgICAgICAgdXJsXG4gICAgICB9XG4gICAgfVxuICB9XG5gO1xuUmVzdGF1cmFudExpc3QuZ2V0SW5pdGlhbFByb3BzID0gYXN5bmMgKHsgcmVxIH0pID0+IHtcbiAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2goXCJodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zL3plaXQvbmV4dC5qc1wiKTtcbiAgY29uc3QganNvbiA9IGF3YWl0IHJlcy5qc29uKCk7XG4gIHJldHVybiB7IHN0YXJzOiBqc29uLnN0YXJnYXplcnNfY291bnQgfTtcbn07XG4vLyBUaGUgYGdyYXBocWxgIHdyYXBwZXIgZXhlY3V0ZXMgYSBHcmFwaFFMIHF1ZXJ5IGFuZCBtYWtlcyB0aGUgcmVzdWx0c1xuLy8gYXZhaWxhYmxlIG9uIHRoZSBgZGF0YWAgcHJvcCBvZiB0aGUgd3JhcHBlZCBjb21wb25lbnQgKFJlc3RhdXJhbnRMaXN0KVxuZXhwb3J0IGRlZmF1bHQgZ3JhcGhxbChxdWVyeSwge1xuICBwcm9wczogKHsgZGF0YSB9KSA9PiAoe1xuICAgIGRhdGFcbiAgfSlcbn0pKFJlc3RhdXJhbnRMaXN0KTsiXX0= */\n/*@ sourceURL=/Users/j/Development/Projects/react-next-strapi-stripe-food-delivery/frontend/components/RestaurantList/index.js */"));
     } else {
       return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h1", null, "No Restaurants Found");
     }
@@ -237,7 +237,7 @@ function () {
             return _context.stop();
         }
       }
-    }, _callee);
+    }, _callee, this);
   }));
 
   return function (_x) {
@@ -368,14 +368,12 @@ __webpack_require__.r(__webpack_exports__);
                     return _context.stop();
                 }
               }
-            }, _callee);
+            }, _callee, this);
           }));
 
-          function getInitialProps(_x) {
+          return function getInitialProps(_x) {
             return _getInitialProps.apply(this, arguments);
-          }
-
-          return getInitialProps;
+          };
         }()
       }]);
 
@@ -421,9 +419,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // const apiUrl = process.env.API_URL || "http://localhost:1337";
 
-var apiUrl = process.env.API_URL || "https://jsnspr-fd-be.herokuapp.com";
+var apiUrl = "http://localhost:1337"; // const apiUrl = process.env.API_URL || "https://jsnspr-fd-be.herokuapp.com";
+
 var strapi = new strapi_sdk_javascript_build_main__WEBPACK_IMPORTED_MODULE_4___default.a(apiUrl);
 var strapiRegister = function strapiRegister(username, email, password) {
   if (true) {
@@ -1335,102 +1333,6 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "regenerator-run
 
 /***/ }),
 
-/***/ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Copyright 2015, Yahoo! Inc.
- * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
- */
-var ReactIs = __webpack_require__(/*! react-is */ "react-is");
-var REACT_STATICS = {
-    childContextTypes: true,
-    contextType: true,
-    contextTypes: true,
-    defaultProps: true,
-    displayName: true,
-    getDefaultProps: true,
-    getDerivedStateFromError: true,
-    getDerivedStateFromProps: true,
-    mixins: true,
-    propTypes: true,
-    type: true
-};
-
-var KNOWN_STATICS = {
-    name: true,
-    length: true,
-    prototype: true,
-    caller: true,
-    callee: true,
-    arguments: true,
-    arity: true
-};
-
-var FORWARD_REF_STATICS = {
-    '$$typeof': true,
-    render: true
-};
-
-var TYPE_STATICS = {};
-TYPE_STATICS[ReactIs.ForwardRef] = FORWARD_REF_STATICS;
-
-var defineProperty = Object.defineProperty;
-var getOwnPropertyNames = Object.getOwnPropertyNames;
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-var getPrototypeOf = Object.getPrototypeOf;
-var objectPrototype = Object.prototype;
-
-function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
-    if (typeof sourceComponent !== 'string') {
-        // don't hoist over string (html) components
-
-        if (objectPrototype) {
-            var inheritedComponent = getPrototypeOf(sourceComponent);
-            if (inheritedComponent && inheritedComponent !== objectPrototype) {
-                hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
-            }
-        }
-
-        var keys = getOwnPropertyNames(sourceComponent);
-
-        if (getOwnPropertySymbols) {
-            keys = keys.concat(getOwnPropertySymbols(sourceComponent));
-        }
-
-        var targetStatics = TYPE_STATICS[targetComponent['$$typeof']] || REACT_STATICS;
-        var sourceStatics = TYPE_STATICS[sourceComponent['$$typeof']] || REACT_STATICS;
-
-        for (var i = 0; i < keys.length; ++i) {
-            var key = keys[i];
-            if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
-                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
-                try {
-                    // Avoid failures from read-only properties
-                    defineProperty(targetComponent, key, descriptor);
-                } catch (e) {}
-            }
-        }
-
-        return targetComponent;
-    }
-
-    return targetComponent;
-}
-
-module.exports = hoistNonReactStatics;
-
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/client/link.js":
 /*!***********************************************!*\
   !*** ./node_modules/next/dist/client/link.js ***!
@@ -1895,7 +1797,7 @@ var react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 
 var prop_types_1 = __importDefault(__webpack_require__(/*! prop-types */ "prop-types"));
 
-var hoist_non_react_statics_1 = __importDefault(__webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js"));
+var hoist_non_react_statics_1 = __importDefault(__webpack_require__(/*! hoist-non-react-statics */ "./node_modules/next/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js"));
 
 var utils_1 = __webpack_require__(/*! next-server/dist/lib/utils */ "next-server/dist/lib/utils");
 
@@ -1942,6 +1844,102 @@ exports.default = withRouter;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
+
+
+/***/ }),
+
+/***/ "./node_modules/next/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/next/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright 2015, Yahoo! Inc.
+ * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+ */
+var ReactIs = __webpack_require__(/*! react-is */ "react-is");
+var REACT_STATICS = {
+    childContextTypes: true,
+    contextType: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    getDerivedStateFromError: true,
+    getDerivedStateFromProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
+
+var KNOWN_STATICS = {
+    name: true,
+    length: true,
+    prototype: true,
+    caller: true,
+    callee: true,
+    arguments: true,
+    arity: true
+};
+
+var FORWARD_REF_STATICS = {
+    '$$typeof': true,
+    render: true
+};
+
+var TYPE_STATICS = {};
+TYPE_STATICS[ReactIs.ForwardRef] = FORWARD_REF_STATICS;
+
+var defineProperty = Object.defineProperty;
+var getOwnPropertyNames = Object.getOwnPropertyNames;
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+var getPrototypeOf = Object.getPrototypeOf;
+var objectPrototype = Object.prototype;
+
+function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+    if (typeof sourceComponent !== 'string') {
+        // don't hoist over string (html) components
+
+        if (objectPrototype) {
+            var inheritedComponent = getPrototypeOf(sourceComponent);
+            if (inheritedComponent && inheritedComponent !== objectPrototype) {
+                hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
+            }
+        }
+
+        var keys = getOwnPropertyNames(sourceComponent);
+
+        if (getOwnPropertySymbols) {
+            keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+        }
+
+        var targetStatics = TYPE_STATICS[targetComponent['$$typeof']] || REACT_STATICS;
+        var sourceStatics = TYPE_STATICS[sourceComponent['$$typeof']] || REACT_STATICS;
+
+        for (var i = 0; i < keys.length; ++i) {
+            var key = keys[i];
+            if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
+                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+                try {
+                    // Avoid failures from read-only properties
+                    defineProperty(targetComponent, key, descriptor);
+                } catch (e) {}
+            }
+        }
+
+        return targetComponent;
+    }
+
+    return targetComponent;
+}
+
+module.exports = hoistNonReactStatics;
 
 
 /***/ }),

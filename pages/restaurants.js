@@ -47,7 +47,7 @@ class Restaurants extends React.Component {
                 {restaurant.dishes.map(res => (
                   <Card
                     style={{ width: "250px", margin: "0 10px 30px 10px", height: "520px" }}
-                    key={res.id}
+                    key={res._id}
                   >
                     <CardImg
                       top={true}
@@ -115,10 +115,10 @@ class Restaurants extends React.Component {
 const GET_RESTAURANT_DISHES = gql`
   query($id: ID!) {
     restaurant(id: $id) {
-      id
+      _id
       name
       dishes {
-        id
+        _id
         name
         description
         price

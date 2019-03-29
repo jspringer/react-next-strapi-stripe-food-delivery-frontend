@@ -52,7 +52,7 @@ class Cart extends React.Component {
                         <div
                           className="items-one"
                           style={{ marginBottom: 15 }}
-                          key={item.id}
+                          key={item._id}
                         >
                           <div>
                             <span id="item-price">&nbsp; ${item.price}</span>
