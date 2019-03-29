@@ -55,7 +55,7 @@ class Layout extends React.Component {
           <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Roboto" rel="stylesheet" />
         </Head>
         <header style={{ marginBottom: "30px" }}>
-          <Nav className="navbar navbar-light bg-white" style={{ position: "sticky !important", top: "0" }}>
+          <Nav className="navbar navbar-light bg-white">
             <NavItem>
               <Link href="/">
                 <a className="navbar-brand"><span style={{ color: "black", fontFamily: "Roboto, Helvetica, Arial, 'Open Sans'", fontWeight: "900" }}>gimmegrub</span></a>
@@ -94,14 +94,13 @@ class Layout extends React.Component {
           </Nav>
         </header>
         <Container>{children}</Container>
-        <footer className="footer" style={{ position: "static", bottom: "0" }}><Link href="http://jasonspringer.me/">Jason Springer</Link></footer>
+        <footer className="footer" style={{ position: "static" }}><Link href="http://jasonspringer.me/">Jason Springer</Link></footer>
         {/* <footer className="footer">
           {"Strapi footer"}
           <style jsx>
             {`
               .footer {
                 position: static;
-                bottom: 0;
                 width: 100%;
                 height: 60px;
                 line-height: 60px;
