@@ -45,11 +45,12 @@ class MyApp extends App {
               column-count: 3;
             }
             .footer {
-              margin-top: 50px;
-              width: 100%;
-              height: 60px;
-              line-height: 60px;
-              background-color: #f5f5f5;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              padding: 1rem;
+              background-color: #efefef;
               text-align: center;
               font-family: 'Gothic A1', Roboto, Helvetica, Arial;
             }
