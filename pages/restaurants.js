@@ -99,7 +99,7 @@ class Restaurants extends React.Component {
                 ))}
               </div>
             </Col>
-            <Col xs="3" style={{ padding: "0", position: "sticky", top: "100px", right: "30px" }}>
+            <Col xs="3" style={{ padding: "0" }}>
               <div>
                 <Cart isAuthenticated={isAuthenticated} />
               </div>

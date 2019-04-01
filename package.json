@@ -4,7 +4,7 @@
   "description": "Food delivery website similar to Seamless/Grubhub/Deliveroo. State handled with Context. Content managed via Strapi and payments via Stripe.",
   "author": "Jason Springer <jspringercontact@gmail.com>",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "API_URL=http://localhost:1337 node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js -p $PORT",
     "heroku-postbuild": "next build"
