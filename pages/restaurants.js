@@ -15,7 +15,8 @@ import {
   Col,
   Row
 } from "reactstrap";
-import Cart from "../components/Cart/Cart";
+import jwtDecode from "jwt-decode";
+import Cookies from "js-cookie";
 import defaultPage from "../hocs/defaultPage";
 
 class Restaurants extends React.Component {
@@ -34,7 +35,11 @@ class Restaurants extends React.Component {
       isAuthenticated
     } = this.props;
     if (error) return "Error Loading Dishes";
-
+    // Need to add a check to see if current restaurant matches the cart's restaurant 
+    // If so, inform end user their current cart will be cleared and the new restaurant's 
+    // item will be added. This may be better added to the 
+    // Add Cart option, as the end user may just be curious about the other restaurants 
+    // and receiving that pop up each time could get irritating. 
     if (restaurant) {
       return (
         <>

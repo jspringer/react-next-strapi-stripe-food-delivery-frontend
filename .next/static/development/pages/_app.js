@@ -132,8 +132,7 @@ function (_React$Component) {
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "clearItems", function (items) {
-      items.length = 0; //check for item already in cart
-      //if not in cart, add item if item is found increase quanity ++
+      items.length = 0;
 
       _this.setState({
         items: items,

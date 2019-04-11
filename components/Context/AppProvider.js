@@ -91,10 +91,13 @@ class AppProvider extends React.Component {
     }
     console.log("Items after: ", items);
   };
+  /* checkCartCo = items. => {
+     This may be a method to check and clear an end user's cart 
+     if the current restaurant item is from a diferent restaurant
+     than the item(s) currently in the cart. See pages/restaurants.js
+  } */
   clearItems = items => {
     items.length = 0;
-    //check for item already in cart
-    //if not in cart, add item if item is found increase quanity ++
     this.setState(
       { items: items, total: 0 },
       () => Cookies.set("cart", this.state.items)
