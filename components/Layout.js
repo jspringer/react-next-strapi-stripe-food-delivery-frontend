@@ -102,13 +102,22 @@ class Layout extends React.Component {
               .footer {
                 position: static;
                 width: 100%;
-                height: 60px;
-                line-height: 60px;
-                background-color: #f5f5f5;
+                height: 50px;
+                line-height: 50px;
+                background-color: #313131;
+                text-align: center;
               }
               a:hover {
                 cursor: pointer;
                 color: yellow;
+              }
+              .footer a {
+                color: #fafafa !important;
+                text-decoration: none;
+              }
+              .footer a:hover {
+                color: #dadada !important;
+                text-decoration: none; 
               }
             `}
           </style>

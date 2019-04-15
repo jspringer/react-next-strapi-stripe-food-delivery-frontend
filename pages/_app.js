@@ -47,12 +47,21 @@ class MyApp extends App {
             .footer {
               margin-top: 50px;
               width: 100%;
-              height: 60px;
-              line-height: 60px;
-              background-color: #f5f5f5;
+              height: 50px;
+              line-height: 50px;
+              background-color: #313131;
               text-align: center;
-              font-family: 'Gothic A1', Roboto, Helvetica, Arial;
+              font-family:  Helvetica, Arial;
             }
+            .footer a {
+              color: #fafafa !important;
+              text-decoration: none;
+            }
+            .footer a:hover {
+              color: #dadada !important;
+              text-decoration: none; 
+            }
+
             .midBgColor {
               background-color: #ffeae4;
             }
