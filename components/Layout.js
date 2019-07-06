@@ -33,15 +33,8 @@ class Layout extends React.Component {
     return (
       <div>
         <Head>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100333748-4">
-          </script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-100333748-4');
-          </script>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100333748-4" />
+          <script src="../src/ganalytics.js" />
           <title>{title}</title>
           <meta charSet="utf-8" />
           <meta
