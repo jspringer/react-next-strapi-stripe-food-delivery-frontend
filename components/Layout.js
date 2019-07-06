@@ -34,7 +34,7 @@ class Layout extends React.Component {
       <div>
         <Head>
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-100333748-4" />
-          <script src="../src/ganalytics.js" />
+          <script async src="https://res.cloudinary.com/jsnspr-cloudinary/raw/upload/v1562449529/scripts/ganalytics.js" />
           <title>{title}</title>
           <meta charSet="utf-8" />
           <meta
